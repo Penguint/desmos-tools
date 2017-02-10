@@ -1,0 +1,19 @@
+ <!DOCTYPE HTML>
+ 
+<html>
+	<head>
+		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+	</head>
+	<body>
+		<p>123</p>
+		
+		<div id="calculator" style="width: 600px; height: 400px;"></div>
+		<p>123</p>
+		
+		<script>
+			var elt = document.getElementById('calculator');
+			var calculator = Desmos.GraphingCalculator(elt);
+			calculator.setExpression({id:'graph1', latex:'y=x^2'});
+		</script>	
+	</body>
+</html>
