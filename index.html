@@ -30,21 +30,25 @@
 			var $getButton = $('#get-button');
 			var $replaceButton = $('#replace-button');
 			var $box = $('#print-box');
+			var state;
+			var stateString = new String;
 			
 			var calculator = Desmos.GraphingCalculator(elt);
 			
 			calculator.setExpression({id:'graph1', latex:'y=x^2'});
 			
 			$getButton.click(function(){
-				var state = calculator.getState();
-				var str = JSON.stringify(state);
-				$box.text(str);
-			})
+				state = calculator.getState();
+				stateString = JSON.stringify(state);
+				$box.text(stateString);
+			});
 			
 			$replaceButton.click(function(){
-				var state1 = JSON.parse(str.replace("#2d70b3"，"#000000"));
-				calculator.setState(state1);
-			})
+				stateString = stateString.replace("2d70b3","000000");
+				state = JSON.parse(stateString);
+				calculator.setState(state);
+				$box.text(stateString);
+			});
 		</script>	
 	</body>
 </html>
