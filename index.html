@@ -17,8 +17,8 @@
 		</p>
 		
 		<p>
-			<button id="get-button">Get state and print</button>
-			<button id="replace-button">Replace and print</button>
+			<button id="get-btn">Get state and print</button>
+			<button id="replace-btn">Replace and print</button>
 		</p>
 		
 		<p>
@@ -27,8 +27,6 @@
 		
 		<script>
 			var elt = document.getElementById('calculator');
-			var $getButton = $('#get-button');
-			var $replaceButton = $('#replace-button');
 			var $box = $('#print-box');
 			var state;
 			var stateString;
@@ -36,13 +34,13 @@
 			var calculator = Desmos.GraphingCalculator(elt);
 			calculator.setExpression({id:'graph1', latex:'y=x^2'});
 			
-			$getButton.click(function(){
+			$('#get-btn').click(function(){
 				state = calculator.getState();
 				stateString = JSON.stringify(state);
 				$box.text(stateString);
 			});
 			
-			$replaceButton.click(function(){
+			$('#replace-btn').click(function(){
 				stateString = stateString.replace("2d70b3","000000");
 				state = JSON.parse(stateString);
 				calculator.setState(state);
