@@ -21,13 +21,11 @@
 			<button id="replace-btn">Replace and print</button>
 		</p>
 		
-		<p>
-			<span id="print-box"></span>
-		</p>
+		<textarea id="print-box"></textarea>
 		
 		<script>
 			var elt = document.getElementById('calculator');
-			var $box = $('#print-box');
+			var box = document.getElementById('print-box');
 			var state;
 			var stateString;
 			
@@ -37,14 +35,14 @@
 			$('#get-btn').click(function(){
 				state = calculator.getState();
 				stateString = JSON.stringify(state);
-				$box.text(stateString);
+				box.innerHTML = stateString;
 			});
 			
 			$('#replace-btn').click(function(){
 				stateString = stateString.replace("2d70b3","000000");
 				state = JSON.parse(stateString);
 				calculator.setState(state);
-				$box.text(stateString);
+				box.innerHTML = stateString;
 			});
 		</script>	
 	</body>
