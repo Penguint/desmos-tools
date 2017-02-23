@@ -35,14 +35,13 @@
 			$('#get-btn').click(function(){
 				state = calculator.getState();
 				stateString = JSON.stringify(state);
-				box.innerHTML = stateString;
+				box.value = stateString;
 			});
 			
 			$('#load-btn').click(function(){
-				stateString = box.innerHTML;
+				stateString = box.value;
 				state = JSON.parse(stateString);
 				calculator.setState(state);
-				box.innerHTML = stateString;
 			});
 		</script>	
 	</body>
