@@ -17,8 +17,8 @@
 		</p>
 		
 		<p>
-			<button id="get-btn">Get state and print</button>
-			<button id="replace-btn" type="button">Replace and print</button>
+			<button id="get-btn" type="button">Get state</button>
+			<button id="load-btn" type="button">Load state</button>
 		</p>
 		
 		<textarea id="print-box" type="button"></textarea>
@@ -38,11 +38,10 @@
 				box.innerHTML = stateString;
 			});
 			
-			$('#replace-btn').click(function(){
-				stateString = stateString.replace("2d70b3","000000");
+			$('#load-btn').click(function(){
+				stateString = box.innerHTML;
 				state = JSON.parse(stateString);
 				calculator.setState(state);
-				box.innerHTML = stateString;
 			});
 		</script>	
 	</body>
