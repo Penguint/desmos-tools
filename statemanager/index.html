@@ -7,19 +7,23 @@
 		<title>Desmos 3D state manager</title>
 		
 		<link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="./stylesheet.css" />
 		
 		<script src="../assets/js/jquery-3.1.1.min.js"></script>
 		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 	</head>
 	<body>
-		<p>
-			<div id="calculator"></div>
-		</p>
+		<header>
+			<span class="logo">desmos</span>
+			<span class="title">State Manager</span>
+		</header>
 		
-		<p>
+		<div id="calculator"></div>
+		
+		<div class="btn-container">
 			<button id="get-btn" type="button">Get state</button>
 			<button id="load-btn" type="button">Load state</button>
-		</p>
+		</div>
 		
 		<textarea id="print-box" type="button"></textarea>
 		
