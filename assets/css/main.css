@@ -18,6 +18,10 @@ body {
 }
 
 header {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	
 	width: 100%;
 	height: 46px;
 	
@@ -29,6 +33,7 @@ header {
 	
 	color: #ddd;
 	text-align: center;
+	
 	-webkit-box-shadow: 3px 1px 6px rgba(0,0,0,0.2);
 	box-shadow: 3px 1px 6px rgba(0,0,0,0.2);
 	border-bottom: 1px solid #000;
