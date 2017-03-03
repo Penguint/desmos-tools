@@ -32,6 +32,7 @@ header {
 	background:         linear-gradient(to top, #2a2a2a, #3a3a3a);
 	
 	color: #ddd;
+	line-height: 46px;
 	text-align: center;
 	
 	-webkit-box-shadow: 3px 1px 6px rgba(0,0,0,0.2);
