@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	
 	margin: 0;
 	padding: 0;
 }
@@ -8,8 +12,6 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	padding: 0;
 	overflow: auto;
 }
 
@@ -18,10 +20,6 @@ body {
 }
 
 header {
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	
 	width: 100%;
 	height: 46px;
 	
