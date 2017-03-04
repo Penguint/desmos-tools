@@ -30,18 +30,28 @@ header {
 	background:         linear-gradient(to top, #2a2a2a, #3a3a3a);
 	
 	color: #ddd;
-	line-height: 46px;
-	text-align: center;
+	line-height: 43px;
 	
 	-webkit-box-shadow: 3px 1px 6px rgba(0,0,0,0.2);
-	box-shadow: 3px 1px 6px rgba(0,0,0,0.2);
+	        box-shadow: 3px 1px 6px rgba(0,0,0,0.2);
 	border-bottom: 1px solid #000;
 	-webkit-transform: translate3d(0, 0, 0);
 }
 
 .title-container {
 	margin-left: 15px;
+	font-size: 1.6em;
 	text-align: left;
+	
+}
+
+.logo {
+	font-family: 'VisbyRoundCF-Bo9245b7a761834b';
+}
+
+.title {
+	font-family: 'BauhausITCbyBT-93f3e6b901834b'; 
+	font-weight: 400;
 }
 
 #calculator {
