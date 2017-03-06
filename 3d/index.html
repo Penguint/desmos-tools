@@ -44,11 +44,8 @@
 		
 		<script>
 			var elt = document.getElementById('calculator');
-			var box = document.getElementById('print-box');
-			var state;
-			var stateString;
 			
-			var calculator = Desmos.GraphingCalculator(elt);
+			var calculator = Desmos.GraphingCalculator(elt, {border: false});
 			calculator.setExpression({id:'graph1', latex:'y=x^2'});
 		</script>	
 	</body>
