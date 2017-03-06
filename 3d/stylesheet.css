@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+#calculator {
+	width: 100%;
+	height: calc(100% - 46px);
+}
