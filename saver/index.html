@@ -65,7 +65,8 @@
 			var box = document.getElementById('print-box');
 			var editor = CodeMirror.fromTextArea(box, {
 				mode: 'text/javascript',
-				lineWrapping: true
+				lineWrapping: true,
+				inputStyle: 'textarea'
 			});
 			
 			$('#get-btn').click(function(){
