@@ -31,6 +31,11 @@
 		<script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		
 		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+		
+		<!--CodeMirror-->
+		<link rel="stylesheet" href="../assets/codemirror/lib/codemirror.css">
+		<script src="../assets/codemirror/lib/codemirror.js"></script>
+		<script src="../assets/codemirror/mode/javascript/javascript.js"></script>
 	</head>
 	<body>
 		<header>
@@ -50,22 +55,27 @@
 		<textarea id="print-box" spellcheck="false"></textarea>
 		
 		<script>
-			var elt = document.getElementById('calculator');
-			var box = document.getElementById('print-box');
 			var state;
 			var stateString;
 			
+			var elt = document.getElementById('calculator');
 			var calculator = Desmos.GraphingCalculator(elt, {border: false});
 			calculator.setExpression({id: 'graph1', latex: 'y=x^2'});
+			
+			var box = document.getElementById('print-box');
+			var editor = CodeMirror.fromTextArea(box, {
+				mode: 'text/javascript',
+				lineWrapping: true
+			});
 			
 			$('#get-btn').click(function(){
 				state = calculator.getState();
 				stateString = JSON.stringify(state);
-				box.value = stateString;
+				editor.setValue(stateString);
 			});
 			
 			$('#load-btn').click(function(){
-				stateString = box.value;
+				stateString = editor.getValue();
 				state = JSON.parse(stateString);
 				calculator.setState(state);
 			});
