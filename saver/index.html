@@ -10,6 +10,7 @@
 		<!--Fonts-->
 		<link rel="stylesheet" href="https://cdn.webfont.youziku.com/webfonts/nomal/99147/47019/58b404a8f629d8136c500201.css">
 		<link rel="stylesheet" href="https://cdn.webfont.youziku.com/webfonts/nomal/99147/29785/58bae6b1f629d8128cc4b8d8.css">
+		<link rel="stylesheet" href="../assets/css/fonts.css">
 		
 		<!--jQuery local
 		<script src="../assets/js/jquery-3.1.1.min.js"></script>
@@ -27,6 +28,7 @@
 		<!--Bootstrap JS CDN-->
 		<script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		
+		<!--desmos API-->
 		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 		
 		<!--CodeMirror local
@@ -49,14 +51,13 @@
 				<span class="logo">desmos</span>
 				<span class="title">Saver</span>
 			</div>
+			<div class="btn-container">
+				<span class="icon glyphicon glyphicon-save"></span>
+				<span class="icon glyphicon glyphicon-open"></span>
+			</div>
 		</header>
 		
 		<div id="calculator"></div>
-		
-		<div class="btn-container btn-group" role="group" aria-label="...">
-			<button class="btn btn-default" id="get-btn" type="button">Get state</button>
-			<button class="btn btn-default" id="load-btn" type="button">Load state</button>
-		</div>
 		
 		<textarea id="print-box" spellcheck="false"></textarea>
 		
