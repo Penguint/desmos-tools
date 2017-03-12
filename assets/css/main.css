@@ -56,14 +56,13 @@ header {
 	font-weight: 400;
 }
 
-.btn-container {
-	margin-right: 15px;
-	padding-top: 1px;
-}
-
 .icon {
-	margin-left : 10px;
-	margin-right: 10px;
+	display:inline-block;
+	
+	width: 40px;
+	height: 100%;
+	
+	line-height: 100%;
 }
 
 #calculator {

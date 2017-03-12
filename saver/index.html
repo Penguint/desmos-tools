@@ -55,8 +55,15 @@
 				<span class="title">Saver</span>
 			</div>
 			<div class="btn-container">
-				<span class="icon glyphicon glyphicon-save"></span>
-				<span class="icon glyphicon glyphicon-open"></span>
+				<span class="icon get-btn">
+					<i class="glyphicon glyphicon-save"></i>
+				</span>
+				<span class="icon set-btn">
+					<i class="glyphicon glyphicon-open"></i>
+				</span>
+				<span class="icon lang-btn">
+					<i class="glyphicon glyphicon-globe"></i>
+				</span>
 			</div>
 		</header>
 		
@@ -79,13 +86,13 @@
 				inputStyle: 'textarea'
 			});
 			
-			$('#get-btn').click(function(){
+			$('.get-btn').click(function(){
 				state = calculator.getState();
 				stateString = JSON.stringify(state);
 				editor.setValue(stateString);
 			});
 			
-			$('#load-btn').click(function(){
+			$('.load-btn').click(function(){
 				stateString = editor.getValue();
 				state = JSON.parse(stateString);
 				calculator.setState(state);
