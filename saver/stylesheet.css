@@ -3,6 +3,7 @@
 #calculator {
 	width: 100%;
 	height: calc(100% - 46px - 50px);
+	margin-top: 46px;
 }
 
 #print-box {
