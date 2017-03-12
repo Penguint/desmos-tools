@@ -92,7 +92,7 @@
 				editor.setValue(stateString);
 			});
 			
-			$('.load-btn').click(function(){
+			$('.set-btn').click(function(){
 				stateString = editor.getValue();
 				state = JSON.parse(stateString);
 				calculator.setState(state);
