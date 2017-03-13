@@ -69,7 +69,18 @@
 		
 		<div id="calculator"></div>
 		
-		<textarea id="print-box" spellcheck="false"></textarea>
+		<div class="code-container">
+			<div class="code-title">
+				<span>code</span>
+				<span class="icon copy-btn">
+					<i class="glyphicon glyphicon-copy"></i>
+				</span>
+			</div>
+			
+			<div class="print-box">
+				<textarea id="print-box-textarea" spellcheck="false">xxx</textarea>
+			</div>
+		</div>
 		
 		<script>
 			var state;
@@ -79,12 +90,15 @@
 			var calculator = Desmos.GraphingCalculator(elt, {border: false});
 			calculator.setExpression({id: 'graph1', latex: 'y=x^2'});
 			
-			var box = document.getElementById('print-box');
+			var box = document.getElementById('print-box-textarea');
+			
 			var editor = CodeMirror.fromTextArea(box, {
 				mode: 'text/javascript',
 				lineWrapping: true,
 				inputStyle: 'textarea'
 			});
+			
+			editor.setSize('100%','100%');
 			
 			$('.get-btn').click(function(){
 				state = calculator.getState();
@@ -96,6 +110,13 @@
 				stateString = editor.getValue();
 				state = JSON.parse(stateString);
 				calculator.setState(state);
+			});
+			
+			$('.copy-btn').click(function(){
+				var tempString = editor.getValue();
+				box.value = tempString;
+				box.select();
+				document.execCommand('copy');
 			});
 		</script>	
 	</body>

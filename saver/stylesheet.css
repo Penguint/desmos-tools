@@ -3,10 +3,53 @@
 #calculator {
 	width: 100%;
 	height: calc(100% - 46px - 50px);
-	margin-top: 46px;
+	margin-top: 45px;
+}
+/*
+.dividing-bar {
+	display: -webkit-flex;
+	display:         flex;
+	justify-content: center;
 }
 
-#print-box {
-	width: 100%;
+.dividing-bar .icon {
+	display: inline-block;
+	
+	font-size: 100%;
+}
+*/
+.code-container {
+	width: auto;
 	height: 90%;
+	margin: 10px;
+	
+	background: #efe;
+	border-radius: 5px;
+}
+
+.code-title {
+	display: -webkit-flex;
+	display:         flex;
+	justify-content: space-between;
+	
+	width: 100%;
+	height: 30px;
+}
+
+.copy-btn{
+	display: inline-block;
+	width: 100px;
+	height: 100%;
+}
+
+.print-box {
+	width: auto;
+	height: calc(100% - 50px);
+	margin: 10px;
+}
+
+.print-box textarea{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
