@@ -21,34 +21,45 @@
 .code-container {
 	width: auto;
 	height: 90%;
-	margin: 10px;
+	padding: 10px;
+	margin: 20px;
 	
 	background: #efe;
 	border-radius: 5px;
 }
 
-.code-title {
+.code-header {
 	display: -webkit-flex;
 	display:         flex;
 	justify-content: space-between;
 	
 	width: 100%;
-	height: 30px;
+	height: 40px;
+	
+	line-height: 40px;
+	color: #484;
+}
+
+.code-title{
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 .copy-btn{
 	display: inline-block;
-	width: 100px;
+	width: 50px;
 	height: 100%;
+	
+	font-size: 1.5em;
+	text-align: center;
 }
 
 .print-box {
 	width: auto;
 	height: calc(100% - 50px);
-	margin: 10px;
+	border: 1px solid #484;
 }
 
-.print-box textarea{
+.print-box-textarea{
 	display: block;
 	width: 100%;
 	height: 100%;
