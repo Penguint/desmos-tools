@@ -52,11 +52,12 @@ header {
 }
 
 .logo {
-	font-family: 'VisbyRoundCF-Bo9245b7a761834b';
+	font-weight: bold;
+	font-family: 'Comfortaa', monospace;
 }
 
 .title {
-	font-family: 'BauhausITCbyBT-93f3e6b901834b'; 
+	font-family: 'Text Me One', sans-serif;
 }
 
 .btn-container .icon {
@@ -65,7 +66,7 @@ header {
 	height: 100%;
 	
 	text-align: center;
-	transition: color .2s linear;
+	transition: color .1s linear;
 }
 
 .icon:hover {
