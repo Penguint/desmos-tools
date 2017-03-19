@@ -66,13 +66,15 @@
 		<div class="code-container">
 			<div class="code-header">
 				<span class="code-title">code</span>
+				<!--
 				<span class="icon copy-btn">
 					<i class="glyphicon glyphicon-copy"></i>
 				</span>
+				-->
 			</div>
 			
 			<div class="print-box">
-				<textarea id="print-box-textarea" spellcheck="false">xxx</textarea>
+				<textarea class="print-box-textarea" id="print-box-textarea" spellcheck="false"></textarea>
 			</div>
 		</div>
 		
@@ -95,6 +97,7 @@
 			
 			var box = document.getElementById('print-box-textarea');
 			
+			/*
 			var editor = CodeMirror.fromTextArea(box, {
 				mode: 'text/javascript',
 				lineWrapping: true,
@@ -102,15 +105,16 @@
 			});
 			
 			editor.setSize('100%','100%');
+			*/
 			
 			$('.get-btn').click(function(){
 				state = calculator.getState();
 				stateString = JSON.stringify(state);
-				editor.setValue(stateString);
+				box.value = stateString;
 			});
 			
 			$('.set-btn').click(function(){
-				stateString = editor.getValue();
+				stateString = box.value;
 				state = JSON.parse(stateString);
 				calculator.setState(state);
 			});

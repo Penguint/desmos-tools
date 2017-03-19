@@ -24,6 +24,8 @@
 	padding: 10px;
 	margin: 20px;
 	
+	font-family: "Lucida Console", Monaco, monospace;
+	
 	background: #efe;
 	border-radius: 5px;
 }
@@ -36,12 +38,15 @@
 	width: 100%;
 	height: 40px;
 	
+	color: #007020;
 	line-height: 40px;
-	color: #484;
 }
 
 .code-title{
-	font-family: "Lucida Console", Monaco, monospace;
+	margin-left: 5px; 
+	
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 .copy-btn{
@@ -49,7 +54,6 @@
 	width: 50px;
 	height: 100%;
 	
-	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -57,10 +61,21 @@
 	width: auto;
 	height: calc(100% - 50px);
 	border: 1px solid #484;
+	
+	border-radius: 3px;
 }
 
 .print-box-textarea{
 	display: block;
 	width: 100%;
 	height: 100%;
+	border: 0;
+	padding: 5px;
+	
+	line-height: 1.4;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #005010;
+	
+	border-radius: 2px;
+	resize: none;
 }
