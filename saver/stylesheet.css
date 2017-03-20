@@ -3,21 +3,8 @@
 #calculator {
 	width: 100%;
 	height: calc(100% - 46px - 50px);
-	margin-top: 45px;
-}
-/*
-.dividing-bar {
-	display: -webkit-flex;
-	display:         flex;
-	justify-content: center;
 }
 
-.dividing-bar .icon {
-	display: inline-block;
-	
-	font-size: 100%;
-}
-*/
 .code-container {
 	width: auto;
 	height: 90%;

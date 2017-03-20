@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+	overflow: hidden;
+}
+
 #calculator {
 	width: 100%;
 	height: calc(100% - 46px);
