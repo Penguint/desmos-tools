@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<title>Desmos 3D</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 		
 		<!--Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Text+Me+One">
@@ -29,8 +29,7 @@
 		<link rel="stylesheet" href="../assets/css/main.css">
 		<link rel="stylesheet" href="./stylesheet.css">
 	</head>
-	<body>
-			
+	<body scroll="no">
 		<header>
 			<div class="title-container">
 				<span class="logo">desmos</span>
@@ -40,7 +39,7 @@
 		
 		<div id="calculator"></div>
 		
-
+		<iframe id="ini-state-box" src="./inistate.json"></iframe>
 		
 		
 		<!--desmos API-->
@@ -50,7 +49,7 @@
 		<script src="../assets/js/calculator.js"></script>
 		-->
 		
-<iframe id="ini-state-box" src="./inistate.json"></iframe>
+
 		
 		<script>
 			var state;

@@ -4,11 +4,11 @@ body {
 	overflow: hidden;
 }
 
-#calculator {
-	width: 100%;
-	height: calc(100% - 46px);
-}
-
 iframe {
 	display: none;
+}
+
+#calculator {
+	width: 100%;
+	height: 100%;
 }

@@ -2,7 +2,7 @@
 
 #calculator {
 	width: 100%;
-	height: calc(100% - 46px - 50px);
+	height: calc(100% - 90px);
 }
 
 .code-container {
