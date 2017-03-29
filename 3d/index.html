@@ -39,9 +39,9 @@
 		</header>
 		
 		<div id="calculator"></div>
-		
+		<!--
 		<iframe id="ini-state-box" src="./inistate.json"></iframe>
-		
+		-->
 		<!--desmos API-->
 		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 		
@@ -76,23 +76,29 @@
 					id: 'border.v', domain: {min: vMin, max: vMax}
 				});
 			}
-			
+			/*
 			var iframe = document.getElementById('ini-state-box').contentWindow;
-			
+			*/
 			function loadini(){
+				$.getJSON('./inistate.json', function(state){
+					calculator.setDefaultState(state);
+					calculator.setState(state);
+				});
+				/*
 				stateString = iframe.document.body.innerText;
 				state = JSON.parse(stateString);
 				calculator.setDefaultState(state);
 				calculator.setState(state);
+				*/
 			}
-			
+			/*
 			iframe.onload = function(){
 				if(!isLoaded){
 					loadini();
 					isLoaded = true;
 				}
 			};
-			
+			*/
 			window.onload = function(){
 				if(!isLoaded){
 					loadini();
