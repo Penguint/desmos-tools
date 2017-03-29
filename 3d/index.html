@@ -60,7 +60,7 @@
 			
 			var uMin,uMax,vMin,vMax;
 			
-			function update(){
+			function update() {
 				state = calculator.getState();
 				explist = state.expressions.list;
 				
@@ -76,41 +76,27 @@
 					id: 'border.v', domain: {min: vMin, max: vMax}
 				});
 			}
-			/*
-			var iframe = document.getElementById('ini-state-box').contentWindow;
-			*/
-			function loadini(){
-				$.getJSON('./inistate.json', function(state){
+			
+			function loadini() {
+				$.getJSON('./inistate.json', function(state) {
 					calculator.setDefaultState(state);
 					calculator.setState(state);
+					
+					isLoaded = true;
 				});
-				/*
-				stateString = iframe.document.body.innerText;
-				state = JSON.parse(stateString);
-				calculator.setDefaultState(state);
-				calculator.setState(state);
-				*/
 			}
-			/*
-			iframe.onload = function(){
-				if(!isLoaded){
-					loadini();
-					isLoaded = true;
-				}
-			};
-			*/
-			window.onload = function(){
-				if(!isLoaded){
-					loadini();
-					isLoaded = true;
-				}
-			};
 			
-			calculator.observeEvent('change', function (){
-				if(isLoaded){
-					update();
+			window.onload = function() {
+				if (!isLoaded) {
+					loadini();
+					
+					calculator.observeEvent('change', function() {
+						if (isLoaded) {
+							update();
+						}
+					});
 				}
-			});
+			};
 		</script>
 	</body>
 </html>
