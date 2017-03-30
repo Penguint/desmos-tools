@@ -45,6 +45,23 @@
 		<link rel="stylesheet" href="./stylesheet.css">
 	</head>
 	<body>
+		<div class="loading-container">
+			<div class="loading-layer">
+				<div class="loading-background"></div>
+			</div>
+			<div class="loading-layer">
+				<div class="loading-text">
+					<span class="logo">desmos</span>
+					<span class="title">Saver</span>
+				</div>
+			</div>
+			<div class="loading-layer">
+				<div class="loading-credits">
+					by Penguint
+				</div>
+			</div>
+		</div>
+		
 		<header>
 			<div class="title-container">
 				<span class="logo">desmos</span>
@@ -82,12 +99,12 @@
 			</div>
 		</div>
 		
-		<!--desmos API-->
+		<!--desmos API
 		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-		
-		<!--desmos API local
-		<script defer src="../assets/js/calculator.js"></script>
 		-->
+		
+		<!--desmos API local-->
+		<script src="../assets/js/calculator.js"></script>
 		
 		<script>
 			var state;
@@ -127,6 +144,10 @@
 				box.select();
 				document.execCommand('copy');
 			});
+			
+			window.onload = function() {
+				$('.loading-container').hide();
+			}
 		</script>
 	</body>
 </html>

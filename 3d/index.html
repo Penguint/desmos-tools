@@ -31,6 +31,23 @@
 		<link rel="stylesheet" href="./stylesheet.css">
 	</head>
 	<body scroll="no">
+		<div class="loading-container">
+			<div class="loading-layer">
+				<div class="loading-background"></div>
+			</div>
+			<div class="loading-layer">
+				<div class="loading-text">
+					<span class="logo">desmos</span>
+					<span class="title">3D</span>
+				</div>
+			</div>
+			<div class="loading-layer">
+				<div class="loading-credits">
+					by Penguint
+				</div>
+			</div>
+		</div>
+		
 		<header>
 			<div class="title-container">
 				<span class="logo">desmos</span>
@@ -45,9 +62,9 @@
 		<!--desmos API
 		<script src="https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
 		-->
+		
 		<!--desmos API local-->
 		<script src="../assets/js/calculator.js"></script>
-		
 		
 		<script>
 			var state;
@@ -82,6 +99,7 @@
 					calculator.setDefaultState(state);
 					calculator.setState(state);
 					
+					$('.loading-container').hide();
 					isLoaded = true;
 				});
 			}

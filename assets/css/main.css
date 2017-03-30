@@ -18,11 +18,165 @@ body {
 	padding-top: 46px;
 }
 
+@-moz-keyframes loading-pulse {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+		-moz-transform: scale(1.5, 1.5);
+	}
+	100% {
+		opacity: 0;
+		-moz-transform: scale(1.5, 1.5);
+	}
+}
+
+@-webkit-keyframes loading-pulse {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+		-webkit-transform: scale(1.5, 1.5);
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1.5, 1.5);
+	}
+}
+
+@-o-keyframes loading-pulse {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+		-o-transform: scale(1.5, 1.5);
+	}
+	100% {
+		opacity: 0;
+		-o-transform: scale(1.5, 1.5);
+	}
+}
+
+@keyframes loading-pulse {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.5, 1.5);
+	}
+}
+
+@-webkit-keyframes credits-show {
+	from {opacity: 0;}
+	to   {opacity: 1;}
+}
+
+@-moz-keyframes credits-show {
+	from {opacity: 0;}
+	to   {opacity: 1;}
+}
+
+@-ms-keyframes credits-show {
+	from {opacity: 0;}
+	to   {opacity: 1;}
+}
+
+@-o-keyframes credits-show {
+	from {opacity: 0;}
+	to   {opacity: 1;}
+}
+
+@keyframes credits-show {
+	from {opacity: 0;}
+	to   {opacity: 1;}
+}
+
+.loading-container {
+	position: fixed;
+	   top: 0;
+	 right: 0;
+	bottom: 0;
+	  left: 0;
+	
+	background: #fff;
+	z-index: 1000;
+}
+
+.loading-layer {
+	position: absolute;
+	   top: 0;
+	 right: 0;
+	bottom: 0;
+	  left: 0;
+	  
+	display: -webkit-flex;
+	display:         flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.loading-background {
+	width: 140px;
+	height: 140px;
+	
+	background: #eee;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	    -ms-border-radius: 50%;
+	     -o-border-radius: 50%;
+	        border-radius: 50%;
+	        
+	webkit-animation: loading-pulse 2.2s infinite;
+	   moz-animation: loading-pulse 2.2s infinite;
+	    ms-animation: loading-pulse 2.2s infinite;
+	     o-animation: loading-pulse 2.2s infinite; 
+	       animation: loading-pulse 2.2s infinite;
+}
+
+.loading-text {
+	font-size: 1.8em;
+	color: #333;
+}
+
+.loading-credits {
+	position: relative;
+	top: 25px;
+	
+	color: #aaa;
+	webkit-animation: credits-show 1s linear 3s both;
+	   moz-animation: credits-show 1s linear 3s both;
+	 vvvms-animation: credits-show 1s linear 3s both;
+	     o-animation: credits-show 1s linear 3s both;
+	       animation: credits-show 1s linear 3s both;
+}
+
 header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 100;
 	
 	display: -webkit-flex;
 	display:         flex;
