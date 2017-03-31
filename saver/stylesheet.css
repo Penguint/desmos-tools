@@ -36,12 +36,16 @@
 	font-size: 1.3em;
 }
 
-.copy-btn{
+.copy-btn {
 	display: inline-block;
 	width: 50px;
 	height: 100%;
 	
 	text-align: center;
+}
+
+.copy-btn:hover {
+	
 }
 
 .print-box {

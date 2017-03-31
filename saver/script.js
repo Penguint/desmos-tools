@@ -7,6 +7,7 @@ calculator.setExpression({id: 'graph1', latex: 'y=x^2'});
 
 var box = document.getElementById('print-box-textarea');
 
+var clipboard = new Clipboard('.copy-btn');
 /*
 var editor = CodeMirror.fromTextArea(box, {
 	mode: 'text/javascript',
