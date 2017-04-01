@@ -34,6 +34,7 @@
 	
 	font-weight: bold;
 	font-size: 1.3em;
+	color: #bdb;
 }
 
 .copy-btn {
@@ -41,11 +42,14 @@
 	width: 50px;
 	height: 100%;
 	
+	font-weight: bold;
+	font-size: 1.5em;
 	text-align: center;
 }
 
 .copy-btn:hover {
-	
+	color: #005010;
+	transition: color .1s linear;
 }
 
 .print-box {
