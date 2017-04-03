@@ -18,19 +18,19 @@ var editor = CodeMirror.fromTextArea(box, {
 editor.setSize('100%','100%');
 */
 
-$('.get-btn').click(function(){
+$('.get-btn').click(function() {
 	state = calculator.getState();
 	stateString = JSON.stringify(state);
 	box.value = stateString;
 });
 
-$('.set-btn').click(function(){
+$('.set-btn').click(function() {
 	stateString = box.value;
 	state = JSON.parse(stateString);
 	calculator.setState(state);
 });
 
-$('.copy-btn').click(function(){
+$('.copy-btn').click(function() {
 	var tempString = editor.getValue();
 	box.value = tempString;
 	box.select();
