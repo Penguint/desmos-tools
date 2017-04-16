@@ -13,12 +13,12 @@ var uMin, uMax, vMin, vMax;
 function update() {
 	state = calculator.getState();
 	explist = state.expressions.list;
-	
+
 	uMin = explist[15].latex;
 	uMax = explist[16].latex;
 	vMin = explist[20].latex;
 	vMax = explist[21].latex;
-	
+
 	calculator.setExpression({
 		id: 'border.u',
 		domain: {
@@ -39,7 +39,7 @@ function loadini() {
 	$.getJSON('./inistate.json', function(state) {
 		calculator.setDefaultState(state);
 		calculator.setState(state);
-		
+
 		$('.loading-container').hide();
 		isLoaded = true;
 	});
@@ -48,7 +48,7 @@ function loadini() {
 window.onload = function() {
 	if (!isLoaded) {
 		loadini();
-		
+
 		calculator.observeEvent('change', function() {
 			if (isLoaded) {
 				update();

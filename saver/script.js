@@ -2,8 +2,13 @@ var state;
 var stateString;
 
 var elt = document.getElementById('calculator');
-var calculator = Desmos.GraphingCalculator(elt, {border: false});
-calculator.setExpression({id: 'graph1', latex: 'y=x^2'});
+var calculator = Desmos.GraphingCalculator(elt, {
+	border: false
+});
+calculator.setExpression({
+	id: 'graph1',
+	latex: 'y=x^2'
+});
 
 var box = document.getElementById('print-box-textarea');
 
