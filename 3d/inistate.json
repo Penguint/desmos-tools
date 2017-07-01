@@ -1,30 +1,17 @@
-﻿
 {
-	"version": 3,
+	"version": 5,
 	"graph": {
 		"showGrid": false,
 		"showXAxis": false,
 		"showYAxis": false,
-		"xAxisStep": 0,
-		"yAxisStep": 0,
-		"xAxisMinorSubdivisions": 0,
-		"yAxisMinorSubdivisions": 0,
-		"xAxisArrowMode": "NONE",
-		"yAxisArrowMode": "NONE",
-		"xAxisLabel": "",
-		"yAxisLabel": "",
 		"xAxisNumbers": false,
 		"yAxisNumbers": false,
-		"polarMode": false,
 		"polarNumbers": false,
-		"degreeMode": false,
-		"projectorMode": false,
-		"squareAxes": true,
 		"viewport": {
 			"xmin": -10.056114904900689,
-			"ymin": -4.768904833352664,
+			"ymin": -7.342165883691638,
 			"xmax": 9.943885095099304,
-			"ymax": 7.38104003985571
+			"ymax": 9.954301090194683
 		}
 	},
 	"expressions": {
@@ -37,9 +24,7 @@
 				"3": true,
 				"4": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "2",
 			"type": "text",
@@ -54,8 +39,7 @@
 			"text": "There are some useful tips in the last folder (\"Tips\"). "
 		}, {
 			"id": "5",
-			"type": "text",
-			"text": ""
+			"type": "text"
 		}, {
 			"id": "6",
 			"type": "folder",
@@ -63,26 +47,12 @@
 			"memberIds": {
 				"10": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "10",
 			"type": "expression",
 			"latex": "f\\left(x,y\\right)=",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#6042a6",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#6042a6"
 		}, {
 			"id": "11",
 			"type": "folder",
@@ -90,41 +60,29 @@
 			"memberIds": {
 				"13": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "13",
 			"columns": [{
 				"values": [""],
-				"columnMode": "POINTS",
-				"dragMode": "NONE",
 				"hidden": true,
 				"id": "14",
 				"color": "#c74440",
-				"style": "point",
 				"latex": "x_1"
 			}, {
 				"values": [""],
 				"columnMode": "POINTS_AND_LINES",
-				"dragMode": "NONE",
-				"hidden": false,
 				"id": "15",
 				"color": "#388c46",
-				"style": "point",
 				"latex": "y_1"
 			}, {
 				"values": [""],
 				"columnMode": "POINTS_AND_LINES",
-				"dragMode": "NONE",
-				"hidden": false,
 				"id": "17",
 				"color": "#2d70b3",
-				"style": "point",
 				"latex": "z_1"
 			}],
-			"type": "table",
-			"secret": false
+			"type": "table"
 		}, {
 			"id": "19",
 			"type": "folder",
@@ -134,78 +92,38 @@
 				"21": true,
 				"22": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "20",
 			"type": "expression",
 			"latex": "x_0\\left(u,v\\right)=",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#000000",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#000000"
 		}, {
 			"id": "21",
 			"type": "expression",
 			"latex": "y_0\\left(u,v\\right)=",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#c74440",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#c74440"
 		}, {
 			"id": "22",
 			"type": "expression",
 			"latex": "z_0\\left(u,v\\right)=",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#2d70b3",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#2d70b3"
 		}, {
 			"id": "24",
 			"type": "folder",
 			"title": "Settings",
 			"memberIds": {
+				"29": true,
+				"31": true,
+				"37": true,
 				"border.u": true,
 				"border.u.min": true,
 				"border.u.max": true,
-				"29": true,
-				"31": true,
 				"border.v": true,
 				"border.v.min": true,
-				"border.v.max": true,
-				"37": true
+				"border.v.max": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "border.u",
 			"type": "expression",
@@ -214,97 +132,30 @@
 				"min": "-5",
 				"max": "5"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#fa7e19",
-			"style": "point",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"style": "POINT"
 		}, {
 			"id": "border.u.min",
 			"type": "expression",
 			"latex": "u_{Min}=-5",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#6042a6",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
-			"sliderMin": "-10",
-			"sliderMax": "10",
-			"sliderHardMin": false,
-			"sliderHardMax": false,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"color": "#6042a6"
 		}, {
 			"id": "border.u.max",
 			"type": "expression",
 			"latex": "u_{Max}=5",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#000000",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
-			"sliderMin": "-10",
-			"sliderMax": "10",
-			"sliderHardMin": false,
-			"sliderHardMax": false,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"color": "#000000"
 		}, {
 			"id": "29",
 			"type": "expression",
 			"latex": "u_{num}=24\\ ",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#c74440",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
 			"sliderMin": "0",
 			"sliderMax": "120",
 			"sliderHardMin": true,
-			"sliderHardMax": true,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"sliderHardMax": true
 		}, {
 			"id": "31",
-			"type": "text",
-			"text": ""
+			"type": "text"
 		}, {
 			"id": "border.v",
 			"type": "expression",
@@ -313,97 +164,30 @@
 				"min": "-5",
 				"max": "5"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#fa7e19",
-			"style": "point",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"style": "POINT"
 		}, {
 			"id": "border.v.min",
 			"type": "expression",
 			"latex": "v_{Min}=-5",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#6042a6",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
-			"sliderMin": "-10",
-			"sliderMax": "10",
-			"sliderHardMin": false,
-			"sliderHardMax": false,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"color": "#6042a6"
 		}, {
 			"id": "border.v.max",
 			"type": "expression",
 			"latex": "v_{Max}=5",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#000000",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
-			"sliderMin": "-10",
-			"sliderMax": "10",
-			"sliderHardMin": false,
-			"sliderHardMax": false,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"color": "#000000"
 		}, {
 			"id": "37",
 			"type": "expression",
 			"latex": "v_{num}=12",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#c74440",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
 			"sliderMin": "0",
 			"sliderMax": "120",
 			"sliderHardMin": true,
-			"sliderHardMax": true,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"sliderHardMax": true
 		}, {
 			"id": "39",
-			"type": "text",
-			"text": ""
+			"type": "text"
 		}, {
 			"id": "40",
 			"type": "folder",
@@ -413,78 +197,34 @@
 				"43": true,
 				"44": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "41",
 			"type": "expression",
 			"latex": "\\left(a_{lpha},2b_{eta}\\right)",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#6042a6",
-			"style": "point",
-			"dragMode": "XY",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"style": "POINT",
+			"dragMode": "XY"
 		}, {
 			"id": "44",
 			"type": "expression",
 			"latex": "a_{lpha}=-0.48",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
 			"hidden": true,
-			"secret": false,
 			"color": "#000000",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
 			"sliderMin": "-2\\pi",
 			"sliderMax": "2\\pi",
 			"sliderHardMin": true,
-			"sliderHardMax": true,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"sliderHardMax": true
 		}, {
 			"id": "43",
 			"type": "expression",
 			"latex": "b_{eta}=-0.45",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
 			"hidden": true,
-			"secret": false,
 			"color": "#6042a6",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false,
 			"sliderMin": "-\\frac{\\pi}{2}",
 			"sliderMax": "\\frac{\\pi}{2}",
 			"sliderHardMin": true,
-			"sliderHardMax": true,
-			"sliderInterval": "",
-			"sliderAnimationPeriod": 4000,
-			"sliderLoopMode": "LOOP_FORWARD_REVERSE",
-			"sliderPlayDirection": 1,
-			"sliderIsPlaying": false
+			"sliderHardMax": true
 		}, {
 			"id": "46",
 			"type": "folder",
@@ -495,77 +235,28 @@
 				"49": true,
 				"50": true
 			},
-			"hidden": false,
 			"collapsed": true,
 			"secret": true
 		}, {
 			"id": "47",
 			"type": "expression",
 			"latex": "p_{rojx}\\left(x,y,z\\right)=x\\sin a_{lpha}+y\\cos a_{lpha}",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#2d70b3",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#2d70b3"
 		}, {
 			"id": "48",
 			"type": "expression",
 			"latex": "p_{rojy}\\left(x,y,z\\right)=\\left(x\\cos a_{lpha}-y\\sin a_{lpha}\\right)\\sin b_{eta}+z\\cos b_{eta}",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#388c46",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#388c46"
 		}, {
 			"id": "49",
 			"type": "expression",
 			"latex": "p_{arax}\\left(u,v\\right)=p_{rojx}\\left(x_0\\left(u,v\\right),y_0\\left(u,v\\right),z_0\\left(u,v\\right)\\right)",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#fa7e19",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#fa7e19"
 		}, {
 			"id": "50",
 			"type": "expression",
 			"latex": "p_{aray}\\left(u,v\\right)=p_{rojy}\\left(x_0\\left(u,v\\right),y_0\\left(u,v\\right),z_0\\left(u,v\\right)\\right)",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#6042a6",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#6042a6"
 		}, {
 			"id": "51",
 			"type": "folder",
@@ -578,9 +269,7 @@
 				"56": true,
 				"57": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "52",
 			"type": "expression",
@@ -589,15 +278,9 @@
 				"min": "-6",
 				"max": "0.5"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#c74440",
-			"style": "dashed",
-			"dragMode": "NONE",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"style": "DASHED",
+			"dragMode": "NONE"
 		}, {
 			"id": "53",
 			"type": "expression",
@@ -606,15 +289,8 @@
 				"min": "-0.5",
 				"max": "6"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#c74440",
-			"style": "normal",
-			"dragMode": "NONE",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"dragMode": "NONE"
 		}, {
 			"id": "54",
 			"type": "expression",
@@ -623,15 +299,9 @@
 				"min": "-6",
 				"max": "0.5"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#388c46",
-			"style": "dashed",
-			"dragMode": "NONE",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"style": "DASHED",
+			"dragMode": "NONE"
 		}, {
 			"id": "55",
 			"type": "expression",
@@ -640,15 +310,7 @@
 				"min": "-0.5",
 				"max": "6"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#388c46",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#388c46"
 		}, {
 			"id": "56",
 			"type": "expression",
@@ -657,15 +319,9 @@
 				"min": "-6",
 				"max": "0.5"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
 			"color": "#2d70b3",
-			"style": "dashed",
-			"dragMode": "NONE",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"style": "DASHED",
+			"dragMode": "NONE"
 		}, {
 			"id": "57",
 			"type": "expression",
@@ -674,15 +330,7 @@
 				"min": "-0.5",
 				"max": "6"
 			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#2d70b3",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#2d70b3"
 		}, {
 			"id": "59",
 			"type": "folder",
@@ -693,81 +341,31 @@
 				"62": true,
 				"63": true
 			},
-			"hidden": false,
 			"collapsed": true,
 			"secret": true
 		}, {
 			"id": "60",
 			"type": "expression",
 			"latex": "u_{step}=\\frac{u_{Max}-u_{Min}}{u_{num}-1}",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#c74440",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#c74440"
 		}, {
 			"id": "61",
 			"type": "expression",
 			"latex": "v_{step}=\\frac{v_{Max}-v_{Min}}{v_{num}-1}",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#2d70b3",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#2d70b3"
 		}, {
 			"id": "62",
 			"type": "expression",
 			"latex": "u_{list}=\\left[u_{Min},u_{Min}+u_{step}...u_{Max}\\right]",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#388c46",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#388c46"
 		}, {
 			"id": "63",
 			"type": "expression",
 			"latex": "v_{list}=\\left[v_{Min},v_{Min}+v_{step}...v_{Max}\\right]",
-			"domain": {
-				"min": "0",
-				"max": "1"
-			},
-			"label": "",
-			"hidden": false,
-			"secret": false,
-			"color": "#fa7e19",
-			"style": "normal",
-			"dragMode": "AUTO",
-			"residualVariable": "",
-			"regressionParameters": {},
-			"isLogModeRegression": false
+			"color": "#fa7e19"
 		}, {
 			"id": "65",
-			"type": "text",
-			"text": ""
+			"type": "text"
 		}, {
 			"id": "67",
 			"type": "folder",
@@ -777,9 +375,7 @@
 				"71": true,
 				"72": true
 			},
-			"hidden": false,
-			"collapsed": true,
-			"secret": false
+			"collapsed": true
 		}, {
 			"id": "70",
 			"type": "text",
