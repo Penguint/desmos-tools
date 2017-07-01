@@ -153,7 +153,7 @@
 			"sliderMax": "120",
 			"sliderHardMin": true,
 			"sliderHardMax": true,
-			"sliderInterval":"1"
+			"sliderInterval": "1"
 		}, {
 			"id": "31",
 			"type": "text"
@@ -186,7 +186,7 @@
 			"sliderMax": "120",
 			"sliderHardMin": true,
 			"sliderHardMax": true,
-			"sliderInterval":"1"
+			"sliderInterval": "1"
 		}, {
 			"id": "39",
 			"type": "text"
