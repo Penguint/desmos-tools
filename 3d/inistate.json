@@ -147,12 +147,13 @@
 		}, {
 			"id": "29",
 			"type": "expression",
-			"latex": "u_{num}=24\\ ",
+			"latex": "u_{num}=24",
 			"color": "#c74440",
 			"sliderMin": "0",
 			"sliderMax": "120",
 			"sliderHardMin": true,
-			"sliderHardMax": true
+			"sliderHardMax": true,
+			"sliderInterval":"1"
 		}, {
 			"id": "31",
 			"type": "text"
@@ -184,7 +185,8 @@
 			"sliderMin": "0",
 			"sliderMax": "120",
 			"sliderHardMin": true,
-			"sliderHardMax": true
+			"sliderHardMax": true,
+			"sliderInterval":"1"
 		}, {
 			"id": "39",
 			"type": "text"
