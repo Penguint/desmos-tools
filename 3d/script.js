@@ -1,58 +1,52 @@
-var state;
-var stateString;
-var explist;
-var isLoaded = false;
-
 var elt = document.getElementById('calculator');
 var calculator = Desmos.GraphingCalculator(elt, {
 	border: false
 });
 
+var state;
 var uMin, uMax, vMin, vMax;
 
-function update() {
-	state = calculator.getState();
-	explist = state.expressions.list;
-
-	uMin = explist[15].latex;
-	uMax = explist[16].latex;
-	vMin = explist[20].latex;
-	vMax = explist[21].latex;
-
+function updateU() {
 	calculator.setExpression({
 		id: 'border.u',
 		domain: {
-			min: uMin,
-			max: uMax
+			min: String(uMin.numericValue),
+			max: String(uMax.numericValue)
 		}
 	});
+}
+
+function updateV() {
 	calculator.setExpression({
 		id: 'border.v',
 		domain: {
-			min: vMin,
-			max: vMax
+			min: String(vMin.numericValue),
+			max: String(vMax.numericValue)
 		}
 	});
 }
 
-function loadini() {
-	$.getJSON('./inistate.json', function(state) {
-		calculator.setDefaultState(state);
-		calculator.setState(state);
+$.getJSON('./inistate.json', function(state) {
+	calculator.setDefaultState(state);
+	calculator.setState(state);
+	
+	uMin = calculator.HelperExpression({latex: 'u_{Min}'});
+	uMax = calculator.HelperExpression({latex: 'u_{Max}'});
+	vMin = calculator.HelperExpression({latex: 'v_{Min}'});
+	vMax = calculator.HelperExpression({latex: 'v_{Max}'});
 
-		$('.loading-container').hide();
-		isLoaded = true;
+	uMin.observe('numericValue', function() {
+		updateU();
 	});
-}
+	uMax.observe('numericValue', function() {
+		updateU();
+	});
+	vMin.observe('numericValue', function() {
+		updateV();
+	});
+	vMax.observe('numericValue', function() {
+		updateV();
+	});
+});
 
-window.onload = function() {
-	if (!isLoaded) {
-		loadini();
-
-		calculator.observeEvent('change', function() {
-			if (isLoaded) {
-				update();
-			}
-		});
-	}
-};
+$('.loading-container').hide();
